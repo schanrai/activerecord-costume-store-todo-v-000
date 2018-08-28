@@ -5,8 +5,8 @@ class CreateCostumeStores < ActiveRecord::Migration[4.2]
       t.string :name
       t.string :location
       t.integer :costume_inventory
-      t.float :price
-      t.text :size
+      t.integer :num_of_employees
+      t.boolean :still_in_business
       t.text :image_url
       t.timestamps
     end
@@ -16,9 +16,6 @@ end
 
 
 
-name
-location
-number of costumes, or "costume inventory"
 number of employees
 whether or not it's still in business
 opening time
