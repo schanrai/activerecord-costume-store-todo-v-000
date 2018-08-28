@@ -7,16 +7,10 @@ class CreateCostumeStores < ActiveRecord::Migration[4.2]
       t.integer :costume_inventory
       t.integer :num_of_employees
       t.boolean :still_in_business
-      t.text :image_url
+      t.string :opening_time
+      t.string :closing_time
       t.timestamps
     end
   end
 
 end
-
-
-
-number of employees
-whether or not it's still in business
-opening time
-closing time
